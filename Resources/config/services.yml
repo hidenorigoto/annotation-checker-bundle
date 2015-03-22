@@ -1,0 +1,7 @@
+services:
+  annotation_checker.metamodel.parser:
+    class: DomainCoder\Metamodel\Code\Parser\Parser
+
+  annotation_checker.metamodel.project_parser:
+    class: DomainCoder\Metamodel\Code\Parser\ProjectParser
+    arguments: [@annotation_checker.metamodel.parser]
